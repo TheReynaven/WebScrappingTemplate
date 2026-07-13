@@ -35,7 +35,7 @@ def test_clean_price_strips_currency_symbols() -> None:
     assert clean_price("£51.77") == 51.77
     assert clean_price("Â£13.50") == 13.50
     with pytest.raises(ValueError):
-        clean_price("gratis")
+        clean_price("free")
 
 
 def test_parse_rating_maps_word_to_int() -> None:
